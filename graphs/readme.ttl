@@ -1,0 +1,525 @@
+@prefix aksw: <http://aksw.org/schema/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://github.com/AKSW/ARUQULA> a sioc:Item ;
+    rdfs:label "ARUQULA" ;
+    aksw:tag <https://aksw.org/Projectskgqa> ;
+    dct:description "ARUQULA: An LLM based Text2SPARQL Approach using ReAct and Knowledge Graph Exploration Utilities - based on SPINACH" .
+
+<https://github.com/AKSW/DBNQA> a sioc:Item ;
+    rdfs:label "DBNQA" ;
+    aksw:tag <https://aksw.org/Projectsdataset>,
+        <https://aksw.org/Projectsdbpedia>,
+        <https://aksw.org/Projectsdeep-learning>,
+        <https://aksw.org/Projectsdeep-learning-dataset>,
+        <https://aksw.org/Projectsdeep-neural-networks>,
+        <https://aksw.org/Projectsevaluation>,
+        <https://aksw.org/Projectsmachine-translation>,
+        <https://aksw.org/Projectsnl-to-sparql-translation>,
+        <https://aksw.org/Projectsnspm>,
+        <https://aksw.org/Projectsnspm-dataset> ;
+    dct:description "DBpedia Neural Question Answering Dataset" .
+
+<https://github.com/AKSW/HiBISCuS> a sioc:Item ;
+    rdfs:label "HiBISCuS" ;
+    aksw:tag <https://aksw.org/Projectsfederation-engine>,
+        <https://aksw.org/Projectshibiscus>,
+        <https://aksw.org/Projectsknowledge-graph>,
+        <https://aksw.org/Projectslinked-data> ;
+    dct:description "HiBISCuS: Hypergraph-Based Source Selection for SPARQL Endpoint Federation" .
+
+<https://github.com/AKSW/KBox> a sioc:Item ;
+    rdfs:label "KBox" ;
+    aksw:tag <https://aksw.org/Projectsdbpedia>,
+        <https://aksw.org/Projectsfreebase>,
+        <https://aksw.org/Projectsjava-api>,
+        <https://aksw.org/Projectskbox>,
+        <https://aksw.org/Projectsknowledge-box>,
+        <https://aksw.org/Projectsknowledge-graph> ;
+    dct:description "📦 The Knowledge Box - A data dependency management framework to help users to publish, find and install data models" .
+
+<https://github.com/AKSW/LLM-KG-Bench> a sioc:Item ;
+    rdfs:label "LLM-KG-Bench" ;
+    aksw:tag <https://aksw.org/Projectsknowledge-graph>,
+        <https://aksw.org/Projectslarge-language-models>,
+        <https://aksw.org/Projectsllm>,
+        <https://aksw.org/Projectsllm-benchmarking> ;
+    dct:description "LLM-KG-Bench is a Framework and task collection for automated benchmarking of Large Language Models (LLMs) on Knowledge Graph (KG) related tasks." .
+
+<https://github.com/AKSW/LLMDatasetGenerator> a sioc:Item ;
+    rdfs:label "LLMDatasetGenerator" ;
+    aksw:tag <https://aksw.org/Projectsdataset-generation>,
+        <https://aksw.org/Projectskgqa>,
+        <https://aksw.org/Projectsllm>,
+        <https://aksw.org/Projectsnlp> ;
+    dct:description "LLM based datatset generator for KGQA on user defined knowledge graphs" .
+
+<https://github.com/AKSW/LSQ> a sioc:Item ;
+    rdfs:label "LSQ" ;
+    aksw:tag <https://aksw.org/Projectsanalytics>,
+        <https://aksw.org/Projectsbenchmarking> ;
+    dct:description "Linked SPARQL Queries (LSQ): Framework for RDFizing triple store (web) logs and performing SPARQL query extraction, analysis and benchmarking in order to produce datasets of Linked SPARQL Queries" .
+
+<https://github.com/AKSW/MadamsEditor> a sioc:Item ;
+    rdfs:label "MadamsEditor" ;
+    aksw:tag <https://aksw.org/Projectsjson>,
+        <https://aksw.org/Projectsmapping> ;
+    dct:description "(yet simple) YARRRML mapping editor: map JSON data to RDF." .
+
+<https://github.com/AKSW/Mandolin> a sioc:Item ;
+    rdfs:label "Mandolin" ;
+    aksw:tag <https://aksw.org/Projectsframework>,
+        <https://aksw.org/Projectsgraph-algorithms>,
+        <https://aksw.org/Projectslink-prediction>,
+        <https://aksw.org/Projectslinked-data>,
+        <https://aksw.org/Projectsmarkov-logic-network> ;
+    dct:description "❇️ The best modules for Markov Logic Networks condensed in one framework." .
+
+<https://github.com/AKSW/OntoWiki> a sioc:Item ;
+    rdfs:label "OntoWiki" ;
+    aksw:tag <https://aksw.org/Projectsknowledgebase>,
+        <https://aksw.org/Projectsontowiki> ;
+    dct:description "Semantic data wiki as well as Linked Data publishing engine" .
+
+<https://github.com/AKSW/QuitDiff> a sioc:Item ;
+    rdfs:label "QuitDiff" ;
+    aksw:tag <https://aksw.org/Projectscommand-line-tool>,
+        <https://aksw.org/Projectsdiff> ;
+    dct:description "Command line comparison tool for semantic web data, it can be used as git difftool for RDF data as well." .
+
+<https://github.com/AKSW/QuitStore> a sioc:Item ;
+    rdfs:label "QuitStore" ;
+    aksw:tag <https://aksw.org/Projectsgit>,
+        <https://aksw.org/Projectsgraph> ;
+    dct:description "🖧 Quads in Git - Distributed Version Control for RDF Knowledge Bases" .
+
+<https://github.com/AKSW/RDFUnit> a sioc:Item ;
+    rdfs:label "RDFUnit" ;
+    aksw:tag <https://aksw.org/Projectsdata-quality>,
+        <https://aksw.org/Projectsdata-quality-checks>,
+        <https://aksw.org/Projectsdata-validation> ;
+    dct:description "An RDF Unit Testing Suite" .
+
+<https://github.com/AKSW/RLOG> a sioc:Item ;
+    rdfs:label "RLOG" ;
+    aksw:tag <https://aksw.org/Projectsjava>,
+        <https://aksw.org/Projectslog4j>,
+        <https://aksw.org/Projectsloggging>,
+        <https://aksw.org/Projectsontology> ;
+    dct:description "RLOG - an RDF Logging Ontology and its Bindings" .
+
+<https://github.com/AKSW/SeMiFuLi> a sioc:Item ;
+    rdfs:label "SeMiFuLi" ;
+    aksw:tag <https://aksw.org/Projectsfno> ;
+    dct:description "SEmantically DEscribed MIni FUnction LIbrary(SeMiFuLi), using FNO for the description in RDF" .
+
+<https://github.com/AKSW/SemWeb2NL> a sioc:Item ;
+    rdfs:label "SemWeb2NL" ;
+    aksw:tag <https://aksw.org/Projectsnatural-language-generation>,
+        <https://aksw.org/Projectsnlg> ;
+    dct:description "Semantic Web related concepts converted to Natural language" .
+
+<https://github.com/AKSW/ShacShifter> a sioc:Item ;
+    rdfs:label "ShacShifter" ;
+    aksw:tag <https://aksw.org/Projectsform> ;
+    dct:description "A shape shifter for the Shapes Constraint Language (SHACL) to various other format and vice versa." .
+
+<https://github.com/AKSW/airML> a sioc:Item ;
+    rdfs:label "airML" ;
+    aksw:tag <https://aksw.org/Projectsai-model-dependency-management> ;
+    dct:description "No description available" .
+
+<https://github.com/AKSW/aksw.github.io> a sioc:Item ;
+    rdfs:label "aksw.github.io" ;
+    aksw:tag <https://aksw.org/Projectsjekyll-rdf> ;
+    dct:description "No description available" .
+
+<https://github.com/AKSW/awesome-queryable-linked-open-data> a sioc:Item ;
+    rdfs:label "awesome-queryable-linked-open-data" ;
+    aksw:tag <https://aksw.org/Projectslinked-open-data>,
+        <https://aksw.org/Projectslod>,
+        <https://aksw.org/Projectslov> ;
+    dct:description "Curated list of queryable linked open data endpoints" .
+
+<https://github.com/AKSW/building-navigator> a sioc:Item ;
+    rdfs:label "building-navigator" ;
+    aksw:tag <https://aksw.org/Projectsaccessibility>,
+        <https://aksw.org/Projectsbuildings>,
+        <https://aksw.org/Projectselevator>,
+        <https://aksw.org/Projectsentrance>,
+        <https://aksw.org/Projectsleipzig>,
+        <https://aksw.org/Projectsnavigation> ;
+    dct:description "The Gebäude-Navigator helps you to find accessible places in Leipzig." .
+
+<https://github.com/AKSW/frankgraphbench> a sioc:Item ;
+    rdfs:label "frankgraphbench" ;
+    aksw:tag <https://aksw.org/Projectsbenchmark>,
+        <https://aksw.org/Projectsknowledge-graph> ;
+    dct:description "The FranKGraphBench is a Framework to allow KG Aware RSs to be benchmarked in a reproducible and easy to implement manner. It was first created on Google Summer of Code 2023 for Data Integration between DBpedia and some standard RS datasets in a reproducible framework." .
+
+<https://github.com/AKSW/git_lfs_server_sshauth> a sioc:Item ;
+    rdfs:label "git_lfs_server_sshauth" ;
+    aksw:tag <https://aksw.org/Projectsgit>,
+        <https://aksw.org/Projectsgit-lfs>,
+        <https://aksw.org/Projectslfs-server> ;
+    dct:description "Git LFS Server with SSH Authentication backing" .
+
+<https://github.com/AKSW/irbench> a sioc:Item ;
+    rdfs:label "irbench" ;
+    aksw:tag <https://aksw.org/Projectsbenchmark-datasets>,
+        <https://aksw.org/Projectsevaluation>,
+        <https://aksw.org/Projectslatex>,
+        <https://aksw.org/Projectsmeasures> ;
+    dct:description "Open Information Retrieval Benchmark Framework" .
+
+<https://github.com/AKSW/jekyll-rdf> a sioc:Item ;
+    rdfs:label "jekyll-rdf" ;
+    aksw:tag <https://aksw.org/Projectshtml>,
+        <https://aksw.org/Projectsjekyll>,
+        <https://aksw.org/Projectsjekyll-plugin>,
+        <https://aksw.org/Projectsjekyll-rdf>,
+        <https://aksw.org/Projectsliquid-filters> ;
+    dct:description "📃 A Jekyll plugin to include RDF data in your static site or build a complete site for your RDF graph" .
+
+<https://github.com/AKSW/leds-asp-f-ontologies> a sioc:Item ;
+    rdfs:label "leds-asp-f-ontologies" ;
+    aksw:tag <https://aksw.org/Projectsaccessibility>,
+        <https://aksw.org/Projectsaccessibilityservice>,
+        <https://aksw.org/Projectsbuilding>,
+        <https://aksw.org/Projectsontology> ;
+    dct:description "This repository is part of ASP-F working group of the LEDS project. Here we develop/collect ontologies for later usage." .
+
+<https://github.com/AKSW/lswt2019.aksw.org> a sioc:Item ;
+    rdfs:label "lswt2019.aksw.org" ;
+    aksw:tag <https://aksw.org/Projectsjekyll-rdf> ;
+    dct:description "Webpage for #LSWT2019" .
+
+<https://github.com/AKSW/lswt2021.aksw.org> a sioc:Item ;
+    rdfs:label "lswt2021.aksw.org" ;
+    aksw:tag <https://aksw.org/Projectsjekyll-rdf> ;
+    dct:description "No description available" .
+
+<https://github.com/AKSW/natuke> a sioc:Item ;
+    rdfs:label "natuke" ;
+    aksw:tag <https://aksw.org/Projectsacademic-data>,
+        <https://aksw.org/Projectsautomatic-extraction>,
+        <https://aksw.org/Projectsicsc2023>,
+        <https://aksw.org/Projectsnatural-products> ;
+    dct:description "NatUKE: Natural Product Knowledge Extraction Benchmark" .
+
+<https://github.com/AKSW/orkg-dump> a sioc:Item ;
+    rdfs:label "orkg-dump" ;
+    aksw:tag <https://aksw.org/Projectsn-triples>,
+        <https://aksw.org/Projectsopen-data>,
+        <https://aksw.org/Projectsopen-research> ;
+    dct:description "No description available" .
+
+<https://github.com/AKSW/orkg-shapes.jekyllrdf> a sioc:Item ;
+    rdfs:label "orkg-shapes.jekyllrdf" ;
+    aksw:tag <https://aksw.org/Projectsjekyll-rdf> ;
+    dct:description "No description available" .
+
+<https://github.com/AKSW/pfarrerbuch.jekyllrdf> a sioc:Item ;
+    rdfs:label "pfarrerbuch.jekyllrdf" ;
+    aksw:tag <https://aksw.org/Projectsjekyll-rdf> ;
+    dct:description "No description available" .
+
+<https://github.com/AKSW/sante> a sioc:Item ;
+    rdfs:label "sante" ;
+    aksw:tag <https://aksw.org/Projectsknowledge-graph> ;
+    dct:description "The Ontology, Dataset and Knowledge Search Engine" .
+
+<https://github.com/AKSW/text2sparql-client> a sioc:Item ;
+    rdfs:label "text2sparql-client" ;
+    aksw:tag <https://aksw.org/Projectscli> ;
+    dct:description "Command Line Client to retrieve SPARQL results from a TEXT2SPARQL conform endpoint." .
+
+<https://github.com/AKSW/text2sparql.aksw.org> a sioc:Item ;
+    rdfs:label "text2sparql.aksw.org" ;
+    aksw:tag <https://aksw.org/Projectschallenge> ;
+    dct:description "Repository of the TEXT2SPARQL challenge series web page" .
+
+<https://github.com/AKSW/transform-bvl-csv-to-json-files> a sioc:Item ;
+    rdfs:label "transform-bvl-csv-to-json-files" ;
+    aksw:tag <https://aksw.org/Projectsbehindertenverband-leipzig>,
+        <https://aksw.org/Projectsjson>,
+        <https://aksw.org/Projectsopen-data> ;
+    dct:description "Some PHP-scripts which build JSON files tailored to be used in the Location Navigator of the Behindertenverband Leipzig e.V." .
+
+<https://github.com/AKSW/transform-bvl-pages-to-csv-file> a sioc:Item ;
+    rdfs:label "transform-bvl-pages-to-csv-file" ;
+    aksw:tag <https://aksw.org/Projectsbehindertenverband-leipzig>,
+        <https://aksw.org/Projectsbuilding>,
+        <https://aksw.org/Projectscsv>,
+        <https://aksw.org/Projectsdisability>,
+        <https://aksw.org/Projectsleipzig>,
+        <https://aksw.org/Projectsopen-data>,
+        <https://aksw.org/Projectsopendata> ;
+    dct:description "Repository contains files to extract and enrich data from closed database of the Online-Stadtführer maintained by Behindertenverband Leipzig e.V (in German). Besides that, further files like a R2RML mapping, are maintained." .
+
+<https://github.com/AKSW/xlsx2owl> a sioc:Item ;
+    rdfs:label "xlsx2owl" ;
+    aksw:tag <https://aksw.org/Projectsontology-engineering> ;
+    dct:description "xlsx2owl is a tool for collecting classes and properties with a spreadsheet and converting the input to an ontology" .
+
+<https://aksw.org/Projectsacademic-data> a skos:Concept ;
+    rdfs:label "academic-data" .
+
+<https://aksw.org/Projectsaccessibilityservice> a skos:Concept ;
+    rdfs:label "accessibilityservice" .
+
+<https://aksw.org/Projectsai-model-dependency-management> a skos:Concept ;
+    rdfs:label "ai-model-dependency-management" .
+
+<https://aksw.org/Projectsanalytics> a skos:Concept ;
+    rdfs:label "analytics" .
+
+<https://aksw.org/Projectsautomatic-extraction> a skos:Concept ;
+    rdfs:label "automatic-extraction" .
+
+<https://aksw.org/Projectsbenchmark> a skos:Concept ;
+    rdfs:label "benchmark" .
+
+<https://aksw.org/Projectsbenchmark-datasets> a skos:Concept ;
+    rdfs:label "benchmark-datasets" .
+
+<https://aksw.org/Projectsbenchmarking> a skos:Concept ;
+    rdfs:label "benchmarking" .
+
+<https://aksw.org/Projectsbuildings> a skos:Concept ;
+    rdfs:label "buildings" .
+
+<https://aksw.org/Projectschallenge> a skos:Concept ;
+    rdfs:label "challenge" .
+
+<https://aksw.org/Projectscli> a skos:Concept ;
+    rdfs:label "cli" .
+
+<https://aksw.org/Projectscommand-line-tool> a skos:Concept ;
+    rdfs:label "command-line-tool" .
+
+<https://aksw.org/Projectscsv> a skos:Concept ;
+    rdfs:label "csv" .
+
+<https://aksw.org/Projectsdata-quality> a skos:Concept ;
+    rdfs:label "data-quality" .
+
+<https://aksw.org/Projectsdata-quality-checks> a skos:Concept ;
+    rdfs:label "data-quality-checks" .
+
+<https://aksw.org/Projectsdata-validation> a skos:Concept ;
+    rdfs:label "data-validation" .
+
+<https://aksw.org/Projectsdataset> a skos:Concept ;
+    rdfs:label "dataset" .
+
+<https://aksw.org/Projectsdataset-generation> a skos:Concept ;
+    rdfs:label "dataset-generation" .
+
+<https://aksw.org/Projectsdeep-learning> a skos:Concept ;
+    rdfs:label "deep-learning" .
+
+<https://aksw.org/Projectsdeep-learning-dataset> a skos:Concept ;
+    rdfs:label "deep-learning-dataset" .
+
+<https://aksw.org/Projectsdeep-neural-networks> a skos:Concept ;
+    rdfs:label "deep-neural-networks" .
+
+<https://aksw.org/Projectsdiff> a skos:Concept ;
+    rdfs:label "diff" .
+
+<https://aksw.org/Projectsdisability> a skos:Concept ;
+    rdfs:label "disability" .
+
+<https://aksw.org/Projectselevator> a skos:Concept ;
+    rdfs:label "elevator" .
+
+<https://aksw.org/Projectsentrance> a skos:Concept ;
+    rdfs:label "entrance" .
+
+<https://aksw.org/Projectsfederation-engine> a skos:Concept ;
+    rdfs:label "federation-engine" .
+
+<https://aksw.org/Projectsfno> a skos:Concept ;
+    rdfs:label "fno" .
+
+<https://aksw.org/Projectsform> a skos:Concept ;
+    rdfs:label "form" .
+
+<https://aksw.org/Projectsframework> a skos:Concept ;
+    rdfs:label "framework" .
+
+<https://aksw.org/Projectsfreebase> a skos:Concept ;
+    rdfs:label "freebase" .
+
+<https://aksw.org/Projectsgit-lfs> a skos:Concept ;
+    rdfs:label "git-lfs" .
+
+<https://aksw.org/Projectsgraph> a skos:Concept ;
+    rdfs:label "graph" .
+
+<https://aksw.org/Projectsgraph-algorithms> a skos:Concept ;
+    rdfs:label "graph-algorithms" .
+
+<https://aksw.org/Projectshibiscus> a skos:Concept ;
+    rdfs:label "hibiscus" .
+
+<https://aksw.org/Projectshtml> a skos:Concept ;
+    rdfs:label "html" .
+
+<https://aksw.org/Projectsicsc2023> a skos:Concept ;
+    rdfs:label "icsc2023" .
+
+<https://aksw.org/Projectsjava> a skos:Concept ;
+    rdfs:label "java" .
+
+<https://aksw.org/Projectsjava-api> a skos:Concept ;
+    rdfs:label "java-api" .
+
+<https://aksw.org/Projectsjekyll> a skos:Concept ;
+    rdfs:label "jekyll" .
+
+<https://aksw.org/Projectsjekyll-plugin> a skos:Concept ;
+    rdfs:label "jekyll-plugin" .
+
+<https://aksw.org/Projectskbox> a skos:Concept ;
+    rdfs:label "kbox" .
+
+<https://aksw.org/Projectsknowledge-box> a skos:Concept ;
+    rdfs:label "knowledge-box" .
+
+<https://aksw.org/Projectsknowledgebase> a skos:Concept ;
+    rdfs:label "knowledgebase" .
+
+<https://aksw.org/Projectslarge-language-models> a skos:Concept ;
+    rdfs:label "large-language-models" .
+
+<https://aksw.org/Projectslatex> a skos:Concept ;
+    rdfs:label "latex" .
+
+<https://aksw.org/Projectslfs-server> a skos:Concept ;
+    rdfs:label "lfs-server" .
+
+<https://aksw.org/Projectslink-prediction> a skos:Concept ;
+    rdfs:label "link-prediction" .
+
+<https://aksw.org/Projectslinked-open-data> a skos:Concept ;
+    rdfs:label "linked-open-data" .
+
+<https://aksw.org/Projectsliquid-filters> a skos:Concept ;
+    rdfs:label "liquid-filters" .
+
+<https://aksw.org/Projectsllm-benchmarking> a skos:Concept ;
+    rdfs:label "llm-benchmarking" .
+
+<https://aksw.org/Projectslod> a skos:Concept ;
+    rdfs:label "lod" .
+
+<https://aksw.org/Projectslog4j> a skos:Concept ;
+    rdfs:label "log4j" .
+
+<https://aksw.org/Projectsloggging> a skos:Concept ;
+    rdfs:label "loggging" .
+
+<https://aksw.org/Projectslov> a skos:Concept ;
+    rdfs:label "lov" .
+
+<https://aksw.org/Projectsmachine-translation> a skos:Concept ;
+    rdfs:label "machine-translation" .
+
+<https://aksw.org/Projectsmapping> a skos:Concept ;
+    rdfs:label "mapping" .
+
+<https://aksw.org/Projectsmarkov-logic-network> a skos:Concept ;
+    rdfs:label "markov-logic-network" .
+
+<https://aksw.org/Projectsmeasures> a skos:Concept ;
+    rdfs:label "measures" .
+
+<https://aksw.org/Projectsn-triples> a skos:Concept ;
+    rdfs:label "n-triples" .
+
+<https://aksw.org/Projectsnatural-language-generation> a skos:Concept ;
+    rdfs:label "natural-language-generation" .
+
+<https://aksw.org/Projectsnatural-products> a skos:Concept ;
+    rdfs:label "natural-products" .
+
+<https://aksw.org/Projectsnavigation> a skos:Concept ;
+    rdfs:label "navigation" .
+
+<https://aksw.org/Projectsnl-to-sparql-translation> a skos:Concept ;
+    rdfs:label "nl-to-sparql-translation" .
+
+<https://aksw.org/Projectsnlg> a skos:Concept ;
+    rdfs:label "nlg" .
+
+<https://aksw.org/Projectsnlp> a skos:Concept ;
+    rdfs:label "nlp" .
+
+<https://aksw.org/Projectsnspm> a skos:Concept ;
+    rdfs:label "nspm" .
+
+<https://aksw.org/Projectsnspm-dataset> a skos:Concept ;
+    rdfs:label "nspm-dataset" .
+
+<https://aksw.org/Projectsontology-engineering> a skos:Concept ;
+    rdfs:label "ontology-engineering" .
+
+<https://aksw.org/Projectsontowiki> a skos:Concept ;
+    rdfs:label "ontowiki" .
+
+<https://aksw.org/Projectsopen-research> a skos:Concept ;
+    rdfs:label "open-research" .
+
+<https://aksw.org/Projectsopendata> a skos:Concept ;
+    rdfs:label "opendata" .
+
+<https://aksw.org/Projectsaccessibility> a skos:Concept ;
+    rdfs:label "accessibility" .
+
+<https://aksw.org/Projectsbehindertenverband-leipzig> a skos:Concept ;
+    rdfs:label "behindertenverband-leipzig" .
+
+<https://aksw.org/Projectsbuilding> a skos:Concept ;
+    rdfs:label "building" .
+
+<https://aksw.org/Projectsdbpedia> a skos:Concept ;
+    rdfs:label "dbpedia" .
+
+<https://aksw.org/Projectsevaluation> a skos:Concept ;
+    rdfs:label "evaluation" .
+
+<https://aksw.org/Projectsgit> a skos:Concept ;
+    rdfs:label "git" .
+
+<https://aksw.org/Projectsjson> a skos:Concept ;
+    rdfs:label "json" .
+
+<https://aksw.org/Projectskgqa> a skos:Concept ;
+    rdfs:label "kgqa" .
+
+<https://aksw.org/Projectsleipzig> a skos:Concept ;
+    rdfs:label "leipzig" .
+
+<https://aksw.org/Projectslinked-data> a skos:Concept ;
+    rdfs:label "linked-data" .
+
+<https://aksw.org/Projectsllm> a skos:Concept ;
+    rdfs:label "llm" .
+
+<https://aksw.org/Projectsontology> a skos:Concept ;
+    rdfs:label "ontology" .
+
+<https://aksw.org/Projectsopen-data> a skos:Concept ;
+    rdfs:label "open-data" .
+
+<https://aksw.org/Projectsknowledge-graph> a skos:Concept ;
+    rdfs:label "knowledge-graph" .
+
+<https://aksw.org/Projectsjekyll-rdf> a skos:Concept ;
+    rdfs:label "jekyll-rdf" .
+

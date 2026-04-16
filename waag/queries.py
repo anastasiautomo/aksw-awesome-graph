@@ -10,6 +10,7 @@ prefixes = dedent("""
     prefix xsd: <http://www.w3.org/2001/XMLSchema#>
     prefix sioc: <http://rdfs.org/sioc/ns#>
     prefix doap: <http://usefulinc.com/ns/doap#>
+    prefix aksw: <http://aksw.org/schema/>
     """)
 
 
@@ -54,14 +55,7 @@ def concept_taxonomy(file_path, base_iri):
                     ]
                 ] .
 
-                bind(
-                    iri(
-                        concat(
-                            "{base_iri}",
-                            if(strStarts(?destination, "#"), substr(?destination, 2), ?destination)
-                        )
-                    ) as ?concept_iri
-                )
+                bind(iri(concat("{base_iri}", ?destination)) as ?concept_iri)
 
                 optional {{
                     ?concept_node rdf:_2 [ a xyz:BulletList ;
@@ -75,14 +69,7 @@ def concept_taxonomy(file_path, base_iri):
                         ]
                     ] .
 
-                    bind(
-                        iri(
-                            concat(
-                                "{base_iri}",
-                                if(strStarts(?sub_destination, "#"), substr(?sub_destination, 2), ?sub_destination)
-                            )
-                        ) as ?sub_concept_iri
-                    )
+                    bind(iri(concat("{base_iri}", ?sub_destination)) as ?sub_concept_iri)
                 }}
 
             }}
@@ -126,14 +113,7 @@ def concept_description(file_path, base_iri):
                     filter (fx:next(?concept_membership) = ?next_membership)
                 }}
 
-                bind(
-                    iri(
-                        concat(
-                            "{base_iri}",
-                            if(strStarts(?destination, "#"), substr(?destination, 2), ?destination)
-                        )
-                    ) as ?concept_iri
-                )
+                bind(iri(concat("{base_iri}", ?destination)) as ?concept_iri)
             }}
         }}
         """)
@@ -144,12 +124,14 @@ def awesome_items(file_path, base_iri):
 
     return prefixes + dedent(f"""
         construct {{
-            ?destination_iri a sioc:Item ;
+            ?project_iri a sioc:Item ;
                 rdfs:label ?label ;
                 dct:description ?description ;
-                doap:category [ a skos:Concept ;
-                    rdfs:label ?category_label
-                ], ?stability .
+                aksw:tag ?tag_iri .
+
+            ?tag_iri a skos:Concept ;
+                rdfs:label ?category_label .
+
             ?stability a skos:Concept ;
                 rdfs:label ?stability_label .
 
@@ -191,13 +173,11 @@ def awesome_items(file_path, base_iri):
                     bind(iri("{base_iri}", replace(?stability_label, " ", "_")) as ?stability)
                 }}
 
+                bind(iri(?destination) as ?project_iri)
+
                 bind(
-                    iri(
-                        concat(
-                            if(strStarts(?destination, "#"), "{base_iri}", ""),
-                            ?destination
-                        )
-                    ) as ?destination_iri
+                    iri(concat("{base_iri}", replace(?category_label, " ", "_")))
+                    as ?tag_iri
                 )
 
             }}
@@ -214,15 +194,15 @@ def merge_blank_categories():
             ?blank_category a skos:Concept ;
                 rdfs:label ?category_label .
         } insert {
-            ?project_iri doap:category ?category_iri .
+            ?project_iri aksw:tag ?tag_iri .
         } where {
             ?project_iri doap:category ?blank_category .
             ?blank_category a skos:Concept ;
                     rdfs:label ?category_label .
-            ?category_iri a skos:Concept ;
+            ?tag_iri a skos:Concept ;
                 rdfs:label ?category_label .
             filter(isBlank(?blank_category))
-            filter(!isBlank(?category_iri))
+            filter(!isBlank(?tag_iri))
         }
         """)
 
@@ -249,6 +229,69 @@ def list_projects():
 
     return prefixes + dedent("""
         select ?project {
-            ?project a doap:Project .
+            ?project a sioc:Item .
         }
     """)
+
+
+def link_tags_to_categories():
+    return prefixes + """
+    INSERT {
+        ?tag skos:broader ?category .
+        ?category skos:narrower ?tag .
+    }
+    WHERE {
+        ?project aksw:tag ?tag .
+        ?project doap:category ?category .
+        FILTER NOT EXISTS {
+            ?tag skos:broader ?category .
+        }
+    }
+    """
+
+def assign_default_category(base_iri):
+    return prefixes + f"""
+    INSERT {{
+        ?project doap:category <{base_iri}Other> .
+        <{base_iri}Other> a skos:Concept ;
+            rdfs:label "Other" .
+    }}
+    WHERE {{
+        ?project a doap:Project .
+        FILTER NOT EXISTS {{
+            ?project doap:category ?cat .
+        }}
+    }}
+    """
+
+def normalize_subjects(base_iri):
+    return prefixes + f"""
+    CONSTRUCT {{
+        ?new_s ?p ?o .
+        ?new_s owl:sameAs ?s .
+
+        ?s ?p2 ?o2 .
+    }}
+    WHERE {{
+        {{
+            ?s a ?type .
+            FILTER(?type IN (doap:Project, sioc:Item))
+
+            ?s ?p ?o .
+
+            BIND(
+                IRI(CONCAT("{base_iri}", REPLACE(STR(?s), ".*/", "")))
+                AS ?new_s
+            )
+        }}
+        UNION
+        {{
+            ?s ?p2 ?o2 .
+
+            FILTER NOT EXISTS {{
+                ?s a ?type2 .
+                FILTER(?type2 IN (doap:Project, sioc:Item))
+            }}
+        }}
+    }}
+    """

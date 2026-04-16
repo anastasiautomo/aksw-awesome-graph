@@ -2,7 +2,7 @@ import click
 import sys
 from pathlib import Path
 
-from .graph_generation import GraphGeneration
+from graph_generation import GraphGeneration
 
 
 @click.command()
@@ -13,15 +13,21 @@ from .graph_generation import GraphGeneration
     "--output-dir", help="Where to write the individual graphs to.", default="graphs"
 )
 @click.option("--base-iri", "--iri", help="The base IRI of the document.")
-def cli(awesome_file, base_iri, output_dir):
+
+@click.option("--graph-nt")
+
+def cli(awesome_file, base_iri, output_dir, graph_nt):
     """Get the urls from the markdown files"""
 
     graph_generation = GraphGeneration(base_iri=base_iri)
     graph_generation.init_from_dir(Path(output_dir))
     graph_generation.init_from_readme(awesome_file)
+    graph_generation.init_from_nt_model(graph_nt)
     graph_generation.fetch_doap()
+    graph_generation.update_graph()
     graph_generation.store_to_dir(awesome_file, Path(output_dir))
 
 
 if __name__ == "__main__":
+
     cli()

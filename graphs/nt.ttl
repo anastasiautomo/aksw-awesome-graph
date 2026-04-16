@@ -1,0 +1,238 @@
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix ns1: <http://www.w3.org/TR/owl-ref/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://github.com/AKSW/AskNow> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "AskNow" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/A-skNow> .
+
+<https://github.com/AKSW/Auto-Slides> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "AutoSlides" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/AutoSlides> .
+
+<https://github.com/AKSW/AutoSPARQL> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "AskNow",
+        "AutoSPARQL" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/A-skNow>,
+        <http://aksw.org/Projects/AutoSPARQL> .
+
+<https://github.com/AKSW/DeFacto> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "DeFacto" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/DeFacto> .
+
+<https://github.com/AKSW/Erfurt/> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "Erfurt" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/Erfurt> .
+
+<https://github.com/AKSW/Feasible> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "FEASIBLE" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/FEASIBLE> .
+
+<https://github.com/AKSW/KBox> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "KBox" ;
+    doap:category <https://aksw.org/ProjectsIncubatorProject>,
+        <https://aksw.org/ProjectsOpenSourceProject> ;
+    ns1:sameAs <http://aksw.org/Demo/KBox> .
+
+<https://github.com/AKSW/KeyNode.js> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "KeyNode.js" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/KeyNodeJS> .
+
+<https://github.com/AKSW/LODStats> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "LODStats" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/LODStats> .
+
+<https://github.com/AKSW/LSQ> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "LSQ" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/LSQ> .
+
+<https://github.com/AKSW/LinkedIdioms> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "LinkedIdioms" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsDatasetProject> ;
+    ns1:sameAs <http://aksw.org/Projects/LinkedIdioms> .
+
+<https://github.com/AKSW/Mexproject> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "MEX Vocabulary" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/MEX> .
+
+<https://github.com/AKSW/NSpM> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "Neural SPARQL Machines" ;
+    doap:category <https://aksw.org/ProjectsIncubatorProject>,
+        <https://aksw.org/ProjectsOpenSourceProject> ;
+    ns1:sameAs <http://aksw.org/Projects/NeuralSPARQLMachines> .
+
+<https://github.com/AKSW/OntoWiki> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "OntoWiki" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/OntoWiki> .
+
+<https://github.com/AKSW/Quetsal> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "QUETSAL" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/QUETSAL> .
+
+<https://github.com/AKSW/QuitStore> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "Quit" ;
+    doap:category <https://aksw.org/ProjectsOpenSourceProject> ;
+    ns1:sameAs <http://aksw.org/Projects/Quit> .
+
+<https://github.com/AKSW/RDFUnit/> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "RDFUnit" ;
+    doap:category <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/RDFUnit> .
+
+<https://github.com/AKSW/RDFauthor> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "RDFauthor" ;
+    doap:category <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/RDFauthor> .
+
+<https://github.com/AKSW/SPARQL2NL> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "SPARQL2NL" ;
+    doap:category <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/SPARQL2NL> .
+
+<https://github.com/AKSW/SparqlAnalytics> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "SparqlAnalytics" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/SparqlAnalytics> .
+
+<https://github.com/AKSW/Sparqlify> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "Sparqlify" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/Sparqlify> .
+
+<https://github.com/AKSW/Tapioca> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "Tapioca" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/Tapioca> .
+
+<https://github.com/AKSW/Xturtle> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "Xturtle" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/Xturtle> .
+
+<https://github.com/AKSW/aksw.org> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "aksw.org" ;
+    doap:category <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/AKSWorg> .
+
+<https://github.com/AKSW/csvimport.ontowiki> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "CSVImport" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/CSVImport> .
+
+<https://github.com/AKSW/cubeqa> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "CubeQA" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/CubeQA> .
+
+<https://github.com/AKSW/cubeviz.ontowiki> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "CubeViz" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/CubeViz> .
+
+<https://github.com/AKSW/fox> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "FOX" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/FOX> .
+
+<https://github.com/AKSW/gerbil> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "GERBIL" ;
+    doap:category <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/GERBIL> .
+
+<https://github.com/AKSW/jena-sparql-api> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "jena-sparql-api" ;
+    doap:category <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/jena-sparql-api> .
+
+<https://github.com/AKSW/ldap2sparql> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "LDAP 2 SPARQL" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/LDAP2SPARQL> .
+
+<https://github.com/AKSW/ldwpo> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "LDWPO" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsIncubatorProject> ;
+    ns1:sameAs <http://aksw.org/Projects/LDWPO> .
+
+<https://github.com/AKSW/openspending2rdf> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "LinkedSpending" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject>,
+        <https://aksw.org/ProjectsDatasetProject> ;
+    ns1:sameAs <http://aksw.org/Projects/LinkedSpending> .
+
+<https://github.com/AKSW/rocker> a <http://rdfs.org/sioc/ns#Item>,
+        doap:Project ;
+    rdfs:label "Rocker" ;
+    doap:category <https://aksw.org/ProjectsAlumniProject> ;
+    ns1:sameAs <http://aksw.org/Projects/Rocker> .
+
+<https://aksw.org/ProjectsDatasetProject> a skos:Concept ;
+    rdfs:label "DatasetProject" .
+
+<https://aksw.org/ProjectsOpenSourceProject> a skos:Concept ;
+    rdfs:label "OpenSourceProject" .
+
+<https://aksw.org/ProjectsIncubatorProject> a skos:Concept ;
+    rdfs:label "IncubatorProject" .
+
+<https://aksw.org/ProjectsAlumniProject> a skos:Concept ;
+    rdfs:label "AlumniProject" .
+
