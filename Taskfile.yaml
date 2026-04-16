@@ -3,14 +3,22 @@ version: '3'
 dotenv: ['custom.env', 'default.env']
 
 vars:
-  AWESOME_FILE: ../awesome-web-archiving/README.md
-  BASE_IRI: http://awesome.org/iipc/
+  AWESOME_FILE: ../doap/README.md
+  BASE_IRI: https://aksw.org/Projects/
+  OUTPUT: ../graph/
+  NT: ../doap/aksw.org.nt
 
 tasks:
   default:
     desc: List all tasks
     cmds:
       - task -a
+
+  md:gen:
+    desc: Generate Markdown file
+    cmds:
+      - python3 ./doap/extract_script.py {{.URL}}
+
 
   install:
     desc: Install the dependencies with poetry
@@ -21,7 +29,7 @@ tasks:
   run:
     desc: Execute the command
     cmds:
-      - poetry run python -m waag.cli --awesome-file {{.AWESOME_FILE}} --iri {{.BASE_IRI}} --output-dir graphs
+      - poetry run python3 -m waag.cli --awesome-file {{.AWESOME_FILE}} --iri {{.BASE_IRI}} --output-dir {{.OUTPUT}} --graph-nt {{.NT}}
 
   test:
     desc: Run tests

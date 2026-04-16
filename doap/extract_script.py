@@ -1,17 +1,17 @@
 import requests
 from collections import defaultdict
+import sys
+import requests
 
-API_URL = "https://api.github.com/orgs/AKSW/repos?per_page=60"
-OUTPUT_FILE = "README.md"
+OUTPUT_FILE = "./doap/README.md"
 
 HEADERS = {
     "Accept": "application/vnd.github.mercy-preview+json"
 }
 
 
-def fetch_repos():
+def fetch_repos(url):
     repos = []
-    url = API_URL
 
     while url:
         response = requests.get(url, headers=HEADERS)
@@ -70,8 +70,8 @@ def generate_readme(categories):
     return "\n".join(lines)
 
 
-def main():
-    repos = fetch_repos()
+def main(url):
+    repos = fetch_repos(url)
     categories = group_by_topics(repos)
     readme_content = generate_readme(categories)
 
@@ -82,4 +82,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) < 2:
+        print("Error: No URL provided")
+        sys.exit(1)
+
+    url = sys.argv[1]
+    main(url)
