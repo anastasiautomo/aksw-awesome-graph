@@ -3,7 +3,7 @@ from collections import defaultdict
 import sys
 import requests
 
-OUTPUT_FILE = "./doap/README.md"
+OUTPUT_FILE = "README.md"
 
 HEADERS = {
     "Accept": "application/vnd.github.mercy-preview+json"

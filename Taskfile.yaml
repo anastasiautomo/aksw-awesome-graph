@@ -3,10 +3,10 @@ version: '3'
 dotenv: ['custom.env', 'default.env']
 
 vars:
-  AWESOME_FILE: ../doap/README.md
+  AWESOME_FILE: ../data/README.md
   BASE_IRI: https://aksw.org/Projects/
   OUTPUT: ../graph/
-  NT: ../doap/aksw.org.nt
+  NT: ../data/aksw.org.nt
 
 tasks:
   default:
@@ -17,14 +17,13 @@ tasks:
   md:gen:
     desc: Generate Markdown file
     cmds:
-      - python3 ./doap/extract_script.py {{.URL}}
+      - python3 ./data/extract_script.py {{.URL}}
 
 
   install:
     desc: Install the dependencies with poetry
     cmds:
       - poetry install
-      - pipx install kisumu
 
   run:
     desc: Execute the command
@@ -43,7 +42,4 @@ tasks:
       - poetry run ruff format
       - poetry run ruff check --fix
 
-  build:
-    desc: Build the README
-    cmds:
-      - kisumu build -g graphs/awesome.ttl -t templates/README.md.jinja -o README.md
+
